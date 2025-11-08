@@ -1,0 +1,85 @@
+.articlesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+
+  justify-items: center;
+}
+
+.articleCard {
+  border: 3px solid #dddddd;
+  padding: 1rem;
+  border-radius: 18px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: #b816a0;
+  color: white;
+  text-align: center;
+}
+
+.articleCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #381abd1a;
+}
+
+.articleCard img {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  margin: 0.3rem;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+.btnDeja {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.btnAnnuler {
+  background-color: #dc3545;
+}
+
+.btnAnnuler:hover {
+  background-color: #c82333;
+}
+.panier {
+  margin-top: 3rem;
+  padding: 1rem;
+  border: 4px solid lab(91.02% 2.24 -1.96);
+  border-radius: 10px;
+  background-color: hsl(256, 94%, 53%);
+}
+.panier h2 {
+  margin-bottom: 1rem;
+}
+.panier ul {
+  list-style-type: none;
+  padding: 0;
+}
+.panier li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.panier .total {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.panier button {
+  margin-top: 1rem;
+}
+
